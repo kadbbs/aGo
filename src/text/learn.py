@@ -40,5 +40,37 @@ print(lst1)
 # lst3=lst
 # print(id(lst3))
 
+#字典
+#1.字典的创建
+zidian={'zhang':1000,'fe':45}
+print(zidian.values())#dict_values([1000, 45])
+print(zidian)
+print('zhang')
+print(zidian['zhang'])
+print(zidian.get('fe'))
+
+del zidian['fe']
+print(zidian)
+banduan='zhang' in zidian
+print(banduan)
+zidian['eifji']=78
+print(zidian)
+print(zidian.keys())
+print(zidian.values())
+print(zidian.items())
+
+#集合
+a={12,234,56,6,78,45,34,3122,877878787878}
+b={12,234,56,6,78,45,34,3122,3,5,67,4,32,23}
+print(b-a)
+print(a&b)
+print(a|b==b)
+print(a^b)
+
+#类与对象
+
+class student:
+    pass
 
 
+print(id(student))
